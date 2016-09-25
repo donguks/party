@@ -1,0 +1,17 @@
+<div class="container">
+  <%=image_tag @place.img_url, style: "width:600px;height:auto"  %>
+  <div class="row">
+    <h4>파티참여자</h4>
+  </div>
+  <div class="row">
+    <% @place.members.each do |member| %>
+      <div class="col-md-2 panel panel-default center">
+        <h3><%= member.name %></h3>
+        <h3><%= member.fun %> </h3>
+        <%= link_to "추방", "#", class: "btn btn-primary", style: "margin-bottom:10px" %>
+      </div>
+    <% end %>
+  </div>
+
+</div>
+

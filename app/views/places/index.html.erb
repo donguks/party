@@ -1,0 +1,15 @@
+<div class="row">
+  <% @places.each do |place| %>
+
+    <div class="col-md-4">
+      <%= image_tag place.img_url, style: "width:300px;height:auto", class: "center" %>
+      <h4>
+        <%= place.name %>
+      </h4>
+      <%= link_to "들어가기", place_path(place)%>
+    </div>
+
+
+  <% end %>
+</div>
+
