@@ -1,24 +1,10 @@
-# README
+# 디오니소스님의 흥을 깨지 않는 파티장을 만들자
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 주어진 것
+* 장소와 사람에 대한 seed뿐
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 해야할 것
+* bundle
+* rake db:migrate
+* rake db:seed
+* resources 문법으로 라우팅 만들기
